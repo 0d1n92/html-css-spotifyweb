@@ -41,7 +41,11 @@
   box-sizing: border-box;
 }
 /***reset-CLOSE***/
-
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .icons_nav {
   height: 20px;
@@ -65,7 +69,7 @@
 aside {
   height:calc(100% - 90px );
   width: 230px;
-  padding: 15px 15px 5px 15px;
+  padding: 15px 10px 5px 10px;
   top:0;
   left:0;
   background: #040404;
@@ -77,6 +81,9 @@ aside {
 }
 #header_logo img{
   height: 40px;
+}
+#logo_xs {
+  display: none;
 }
 /***NAV***/
 nav {
@@ -101,7 +108,7 @@ nav {
 
 }
 
-#navbar_items img {
+#navbar_items svg {
   height: 26px;
   font-size: 0;
   vertical-align: middle;
@@ -115,7 +122,7 @@ nav {
 }
 
 
-#add_playlist > img {
+#add_playlist > svg {
   height: 30px;
   vertical-align: middle;
 }
@@ -149,6 +156,14 @@ ul#list_myplaylist li {
   height: 18px;
   vertical-align: middle;
 }
+#profile {
+  line-height: 50px;
+}
+#profile img {
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
 
 /***navbar_bottom-CLOSE***/
   /***playlist-CLOSE***/
@@ -173,8 +188,68 @@ main {
 
 /***footer***/
 footer {
+  background: #282828;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 10px 20px 10px;
   height: 90px;
   width: 100%;
   bottom: 0;
   right: 0;
 }
+
+/***footer-left***/
+#footer_right, #footer_center, #footer_left {
+  height: 70px;
+  line-height: 70px;
+}
+.play_now {
+  display: inline-block;
+}
+.play_album {
+  height: 40px;
+  vertical-align: middle;
+}
+ul#info_song {
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: middle;
+}
+ul#info_song li {
+  list-style: none;
+}
+ div#option_player {
+  display: inline-block;
+ }
+
+ #option_player svg {
+   height: 16px;
+   width: 16px;
+   display: inline-block;
+   margin: 0 10px;
+ }
+ /***footer-left-CLOSE***/
+/***footer-center***/
+#footer_center {
+  text-align: center;
+  width: calc(100% - 500px);
+}
+#time_line_player {
+  width: 70%;
+}
+.progress_bar {
+  display: inline-block;
+  height: 5px;
+  background-color: #b3b3b3;
+}
+/***footer-center-CLOSE***/
+/***footer-right***/
+#footer_right {
+  width: 250px;
+  background-color: darkred;
+}
+
+
+
+/***footer-right-CLOSE***/

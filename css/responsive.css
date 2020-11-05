@@ -1,0 +1,35 @@
+/* smarphone */
+@media (max-width: 480px) {
+
+  #logo_md, aside span, #playlist, ul#list_myplaylist {
+    display: none;
+  }
+
+  #header_logo img#logo_xs {
+    display: block;
+    height: 35px;
+    margin: auto;
+  }
+
+  #header_logo {
+    height: 40px;
+  }
+
+  aside {
+    width: 60px;
+    padding-top: 5px;
+  }
+
+  #section_user_upgrade {
+    width:calc(100% - 60px);
+  }
+
+  #download_app {
+    border: none;
+    text-align: center;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}

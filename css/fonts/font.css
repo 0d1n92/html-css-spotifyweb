@@ -7,11 +7,32 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
+a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-#playlist > span {
+svg {
+  fill: #b3b3b3;
+}
+.author_song, #profile, #playlist > span {
   color: white;
 }
 
 #playlist > span {
   text-transform: uppercase;
 }
+
+#profile {
+  font-weight: 700;
+}
+
+#footer_left {
+  font-size: 12px;
+}
+ li.title_song {
+   font-size: 11px;
+ }

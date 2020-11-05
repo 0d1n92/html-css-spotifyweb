@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/fonts/font.css">
     <title>Fake Spotify</title>
   </head>
@@ -11,25 +12,30 @@
       <div id="wrapper_viewport">
         <aside class="fixed">
           <div id="header_logo">
-            <img src="img/header_logo.svg" alt="">
+            <img id="logo_md" src="img/header_logo.svg" alt="">
+            <img id="logo_xs" src="img/spotify-smartphone.svg" alt="">
           </div>
           <nav>
             <div id="navbar_top">
               <div id="navbar_items">
                 <div id="home">
-                  <img src="img/icons/home.svg" alt=""><span>Home</span>
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"  ><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" /></svg>
+                  <span>Home</span>
                 </div>
                 <div id="search">
-                  <img src="img/icons/search.svg" alt=""><span>Search</span>
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill-rule="evenodd"/></svg>
+                  <span>Search</span>
                 </div>
                 <div id="library">
-                  <img src="img/icons/library.svg" alt=""><span>La tua libreria</span>
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" /></svg>
+                  <span>La tua libreria</span>
                 </div>
               </div>
               <div id="playlist" class="">
                 <span>playlist</span>
                 <div id="add_playlist">
-                  <img src="img/icons/plus.svg" alt=""><span>Crea Playlist</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 0 36 36" style="background-color:#b3b3b3"><path fill="#040404" d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"/></svg>
+                  <span>Crea Playlist</span>
                 </div>
               </div>
               <ul id="list_myplaylist">
@@ -46,6 +52,10 @@
               <div id="download_app">
                 <img id="image_download" src="img/icons/download.svg" alt=""><span>Installa App</span>
               </div>
+              <div id="profile">
+                <img src="img/icons/user.svg" alt=""><span>Jonh Doe</span>
+
+              </div>
             </div>
           </nav>
         </aside>
@@ -57,7 +67,32 @@
 
       </main>
 
-      <footer class="fixed bg_green">
+      <footer class="fixed">
+        <div id="footer_left">
+          <div class="play_now">
+            <img class="play_album" src="img/album/trucebaldazzi.jpg" alt="">
+            <ul id="info_song">
+              <li class="author_song">Trucebaldazzi</li>
+              <li class="title_song"><a href="#">Coronavirus</a></li>
+            </ul>
+         </div>
+         <div id="option_player">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg"><g fill="#b3b3b3" fill-rule="evenod"><path d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" /><path d="M10 8h4v3h-4z"/></g></svg>
+         </div>
+        </div>
+        <div id="footer_center">
+          <span>0.25</span>
+          <div id="time_line_player" class="progress_bar">
+            <span></span>
+          </div>
+          <span>0.45</span>
+        </div>
+        <div id="footer_right">
+          <div id="volume" class="progress_bar">
+            <span></span>
+          </div>
+        </div>
 
       </footer>
       </div>

@@ -57,7 +57,7 @@
   width: 100%;
 }
 /***MENU-FIXED***/
-#add_playlist span, #navbar span {
+#navbar_bottom span, #add_playlist span, #navbar_items span {
   padding-left: 10px;
   vertical-align: middle;
 }
@@ -69,6 +69,7 @@ aside {
   top:0;
   left:0;
   background: #040404;
+  min-height: 450px;
 
 }
 #header_logo {
@@ -80,21 +81,27 @@ aside {
 /***NAV***/
 nav {
   height: calc(100% - 65px);
-  position: relative;
-  min-height: 350px;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
-#add_playlist, #navbar > div {
+/***navbar-top***/
+#navbar_top {
+  height: calc(100% - 90px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#add_playlist, #navbar_items > div {
   line-height: 30px;
   height: 30px;
-  margin-bottom: 8px;
+  margin:8px;
 
 }
-#navbar {
-  overflow: visible;
-}
-#navbar img {
+
+#navbar_items img {
   height: 26px;
   font-size: 0;
   vertical-align: middle;
@@ -102,22 +109,11 @@ nav {
 /***playlist***/
 #playlist {
   margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  height: 60%;
 }
 #add_playlist {
  margin-top: 8px;
 }
 
-#section_user_upgrade {
-  height: 60px;
-  position: fixed;
-  right: 0;
-  top:0;
-  width: calc(100% - 230px);
-
-}
 
 #add_playlist > img {
   height: 30px;
@@ -127,20 +123,44 @@ nav {
 ul#list_myplaylist {
   overflow-y:auto;
   flex-shrink: 1;
+
 }
 ul#list_myplaylist li {
   list-style: none;
-  margin-top: 25px;
+  margin-bottom: 17px;
+  flex-shrink: 1;
 }
+/***navbar-top-CLOSE***/
+/***navbar_bottom***/
+#navbar_bottom {
+  height: 80px;
+  background-color: #040404;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 30px);
+
+}
+#download_app{
+  line-height: 18px;
+  height: 30px;
+  border-bottom: 1px solid #b3b3b3;
+}
+#image_download {
+  height: 18px;
+  vertical-align: middle;
+}
+
+/***navbar_bottom-CLOSE***/
   /***playlist-CLOSE***/
   /***NAV-CLOSE***/
   /***A-SIDE-CLOSE***/
   #section_user_upgrade {
-    height: 80px;
+    height: 60px;
     position: fixed;
     right: 0;
     top:0;
     width: calc(100% - 230px);
+
   }
 
 main {

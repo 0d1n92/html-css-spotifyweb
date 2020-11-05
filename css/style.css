@@ -1,5 +1,5 @@
 /***DEBUG ***/
-.debug {
+/* .debug {
   background-color: red;
 }
 .debug [class*="col-"]{
@@ -11,10 +11,15 @@
   height: 300px;
   background-color: blue;
   border: 1px solid darkolivegreen;
-}
+} */
 
 .bg_red {
   background-color: red;
+  height: 90px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .bg_blue {
@@ -28,21 +33,81 @@
   background-color: darkgreen;
 }
 
+/* ************************************** */
+/***reset***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/***reset-CLOSE***/
+
+
+.icons_nav {
+  height: 20px;
+  width: 20px;
+}
+
 .fixed {
   position: fixed;
 }
-/* ************************************** */
 
 #wrapper_viewport {
-  height: calc(100vh - 90px);
+  height: calc(100vh);
   width: 100%;
+}
+/***MENU-FIXED***/
+#add_playlist span, #navbar span {
+  padding-left: 10px;
+  vertical-align: middle;
 }
 
 aside {
-  height: 100%;
+  height:calc(100% - 90px );
   width: 230px;
+  padding: 15px 15px 5px 15px;
   top:0;
-  left:0
+  left:0;
+  background: #040404;
+
+}
+#header_logo {
+  height: 65px;
+}
+#header_logo img{
+  height: 40px;
+}
+/***NAV***/
+nav {
+  height: calc(100% - 65px);
+  position: relative;
+  min-height: 350px;
+  overflow: hidden;
+}
+
+#add_playlist, #navbar > div {
+  line-height: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+
+}
+#navbar {
+  overflow: visible;
+}
+#navbar img {
+  height: 26px;
+  font-size: 0;
+  vertical-align: middle;
+}
+/***playlist***/
+#playlist {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+}
+#add_playlist {
+ margin-top: 8px;
 }
 
 #section_user_upgrade {
@@ -53,9 +118,33 @@ aside {
   width: calc(100% - 230px);
 
 }
+
+#add_playlist > img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+ul#list_myplaylist {
+  overflow-y:auto;
+  flex-shrink: 1;
+}
+ul#list_myplaylist li {
+  list-style: none;
+  margin-top: 25px;
+}
+  /***playlist-CLOSE***/
+  /***NAV-CLOSE***/
+  /***A-SIDE-CLOSE***/
+  #section_user_upgrade {
+    height: 80px;
+    position: fixed;
+    right: 0;
+    top:0;
+    width: calc(100% - 230px);
+  }
+
 main {
   margin-left: 230px;
-  margin-top: 60px;
   height: 100%;
   font-size: 50px;
   overflow-y: scroll;

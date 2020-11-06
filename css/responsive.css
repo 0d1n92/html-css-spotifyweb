@@ -7,12 +7,20 @@
     align-self: center;
   }
   /***player***/
-  /* #footer_center {
+   #footer_center {
     flex-shrink: 0;
-  } */
-  /* #footer_left,#footer_right {
+    width: 50%;
+  }
+  #footer_left,#footer_right {
     flex-shrink: 1;
-  } */
+  }
+  #footer_right svg {
+    flex-shrink: 0;
+  }
+
+  #footer_left {
+    padding-right: 0;
+  }
   /***footer-CLOSE***/
 }
 
@@ -36,13 +44,19 @@
   aside {
     width: 60px;
     padding-top: 5px;
+    text-align: center;
   }
+
+  main {
+    margin-left: 0;
+  }
+
   /***FOOOTER***/
   img.play_album {
     height: 30px;
   }
   #info_song li {
-    font-size: 12px
+    font-size: 10px
   }
   /***FOOOTER-CLOSE***/
 
@@ -54,8 +68,10 @@
     border: none;
     text-align: center;
   }
+  #player svg {
 
-  main {
-    margin-left: 0;
-  }
+      margin: 0 5px;
+    }
+
+
 }

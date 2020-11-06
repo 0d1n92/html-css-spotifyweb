@@ -106,15 +106,15 @@ nav {
 #add_playlist, #navbar_items > div {
   line-height: 30px;
   height: 30px;
-  margin:8px;
+  margin: 8px 0;
 
 }
 
 #navbar_items svg {
   height: 1.857em;
   width: 1.857em;
-  font-size: 0;
   vertical-align: middle;
+  fill: #a3a3a3
 }
 /***playlist***/
 #playlist {
@@ -126,8 +126,8 @@ nav {
 
 
 #add_playlist > svg {
-  height: 2.142;
-  width: 2.142;
+  height: 2.142em;
+  width: 2.142em;
   vertical-align: middle;
 }
 
@@ -211,8 +211,8 @@ footer {
   padding: 0 10px;
 }
 #footer_right svg, #option_player svg {
-  height: 1.142em;
-  width: 1.142em;
+  height: 0.8;
+  width: 0.8;
   margin: 0 5px;
 }
 
@@ -263,14 +263,12 @@ ul#info_song li {
   margin-bottom: 10px;
 }
 #player svg{
-  height: 1.28em;
-  width: 1.28em;
   vertical-align: middle;
   margin: 0 12px;
 }
 #player svg.play-circle {
-  height: 2.32em;
-  width: 2.32em;
+  height: 1.52em;
+  width: 1.52em;
 }
 #vertical-align {
   vertical-align: middle;
@@ -282,9 +280,6 @@ ul#info_song li {
 
 /***footer-center-CLOSE***/
 /***footer-right***/
-#footer_right {
-  padding-right: 10px;
-}
 #volume {
   width: 40%;
 }

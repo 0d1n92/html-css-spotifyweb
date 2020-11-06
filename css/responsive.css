@@ -1,3 +1,21 @@
+@media (max-width: 750px) {
+  /***footer***/
+  #option_player svg {
+    display: block;
+  }
+  #option_player {
+    align-self: center;
+  }
+  /***player***/
+  /* #footer_center {
+    flex-shrink: 0;
+  } */
+  /* #footer_left,#footer_right {
+    flex-shrink: 1;
+  } */
+  /***footer-CLOSE***/
+}
+
 /* smarphone */
 @media (max-width: 480px) {
 
@@ -40,14 +58,4 @@
   main {
     margin-left: 0;
   }
-}
-
-@media (max-width: 750px) {
-  #option_player svg {
-    display: block;
-  }
-  #option_player {
-    align-self: center;
-}
-
 }

@@ -60,6 +60,11 @@
   height: calc(100vh);
   width: 100%;
 }
+svg {
+  height: 14px;
+  width: 14px;
+  fill: #5a5a5a;;
+}
 /***MENU-FIXED***/
 #navbar_bottom span, #add_playlist span, #navbar_items span {
   padding-left: 10px;
@@ -106,7 +111,8 @@ nav {
 }
 
 #navbar_items svg {
-  height: 26px;
+  height: 1.857em;
+  width: 1.857em;
   font-size: 0;
   vertical-align: middle;
 }
@@ -120,7 +126,8 @@ nav {
 
 
 #add_playlist > svg {
-  height: 30px;
+  height: 2.142;
+  width: 2.142;
   vertical-align: middle;
 }
 
@@ -194,70 +201,83 @@ footer {
   bottom: 0;
   right: 0;
 }
-
-/***footer-left***/
 #footer_right, #footer_left {
   height: 90px;
-  line-height: 90px;
-}
-#footer_left {
-  padding-left: 10px;
   width: 230px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+}
+#footer_right svg, #option_player svg {
+  height: 1.142em;
+  width: 1.142em;
+  margin: 0 5px;
+}
+
+.progress_bar {
+  display: inline-block;
+  height: 3.8px;
+  background-color: #5a5a5a;
+}
+/***footer-left***/
+
+#footer_left {
+  padding-left: 10px;
 }
 
 .play_album {
   height: 40px;
 }
- ul#info_song, .play_album {
-  vertical-align: middle;
-}
+
 ul#info_song {
   display: inline-block;
-  line-height: 20px;
+  line-height: 13px;
+  vertical-align: super;
 }
 ul#info_song li {
   list-style: none;
 }
 
- #option_player svg {
-   height: 14px;
-   width: 16px;
-   margin: 0 5px;
- }
  /***footer-left-CLOSE***/
 /***footer-center***/
 #footer_center {
+  padding: 10px;
+  height: 90px;
   text-align: center;
   width: 60%;
   align-self: center;
 }
 /***player***/
-
+#player {
+  margin-bottom: 10px;
+}
 #player svg{
-  height: 16px;
+  height: 1.28em;
+  width: 1.28em;
   fill: white;
   vertical-align: middle;
   margin: 0 12px;
 }
 #player svg.play-circle {
-  height: 28px;
+  height: 2.32em;
+  width: 2.32em;
+}
+#vertical-align {
+  vertical-align: middle;
 }
 #time_line_player {
   width: 70%;
+  vertical-align: middle;
 }
-.progress_bar {
-  display: inline-block;
-  height: 5px;
-  background-color: #b3b3b3;
-}
+
 /***footer-center-CLOSE***/
 /***footer-right***/
 #footer_right {
-  width: 200px;
-  background-color: darkred;
+  padding-right: 10px;
+}
+#volume {
+  width: 40%;
 }
 
 /***footer-right-CLOSE***/

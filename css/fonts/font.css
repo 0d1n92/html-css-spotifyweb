@@ -15,9 +15,6 @@ a:hover {
   text-decoration: underline;
 }
 
-svg {
-  fill: #b3b3b3;
-}
 .author_song, #profile, #playlist > span {
   color: white;
 }

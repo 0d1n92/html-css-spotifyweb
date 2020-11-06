@@ -208,6 +208,7 @@ footer {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  padding: 0 10px;
 }
 #footer_right svg, #option_player svg {
   height: 1.142em;
@@ -219,12 +220,20 @@ footer {
   display: inline-block;
   height: 3.8px;
   background-color: #5a5a5a;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progress_bar span {
+  display: block;
+  background-color: #c1c1c1;
+  width: 20%;
+  height: 100%;
+}
+
+#player svg, #footer_right svg {
+  fill: white;
 }
 /***footer-left***/
-
-#footer_left {
-  padding-left: 10px;
-}
 
 .play_album {
   height: 40px;
@@ -249,13 +258,13 @@ ul#info_song li {
   align-self: center;
 }
 /***player***/
+
 #player {
   margin-bottom: 10px;
 }
 #player svg{
   height: 1.28em;
   width: 1.28em;
-  fill: white;
   vertical-align: middle;
   margin: 0 12px;
 }

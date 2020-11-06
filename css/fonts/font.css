@@ -15,7 +15,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.author_song, #profile, #playlist > span {
+#wrapper_player, .author_song, #profile, #playlist > span {
   color: white;
 }
 

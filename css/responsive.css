@@ -9,7 +9,7 @@
   /***player***/
    #footer_center {
     flex-shrink: 0;
-    width: 50%;
+    width: 55%;
   }
   #footer_left,#footer_right {
     flex-shrink: 1;
@@ -31,6 +31,11 @@
     display: none;
   }
 
+  #section_user_upgrade {
+    width:calc(100% - 60px);
+  }
+
+/***aside navbar***/
   #header_logo img#logo_xs {
     display: block;
     height: 35px;
@@ -46,7 +51,11 @@
     padding-top: 5px;
     text-align: center;
   }
-
+  #download_app {
+    border: none;
+    text-align: center;
+  }
+/***aside navbar-CLOSE***/
   main {
     margin-left: 0;
   }
@@ -58,20 +67,43 @@
   #info_song li {
     font-size: 10px
   }
-  /***FOOOTER-CLOSE***/
 
-  #section_user_upgrade {
-    width:calc(100% - 60px);
+  #footer_left svg, #footer_right svg {
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: 2px;
   }
 
-  #download_app {
-    border: none;
-    text-align: center;
+  #footer_left {
+    padding-right: 0;
+    width:37%;
+  }
+
+  #footer_center {
+    padding: 0;
+    padding-top: 10px;
+  }
+  #time_line_player {
+      width: 60%;
+    }
+  #player svg.play-circle {
+    height: 2em;
+    width: 2em;
   }
   #player svg {
-
-      margin: 0 5px;
+      height: 1.4em;
+      margin: 0 3px;
     }
+
+  #footer_right {
+    padding-left: 0;
+  }
+  #volume {
+    width: 30%;
+  }
+
+
+  /***FOOOTER-CLOSE***/
 
 
 }

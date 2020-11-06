@@ -211,8 +211,6 @@ footer {
   padding: 0 10px;
 }
 #footer_right svg, #option_player svg {
-  height: 0.8;
-  width: 0.8;
   margin: 0 5px;
 }
 
@@ -231,6 +229,7 @@ footer {
 }
 
 #player svg, #footer_right svg {
+
   fill: white;
 }
 /***footer-left***/
@@ -263,12 +262,14 @@ ul#info_song li {
   margin-bottom: 10px;
 }
 #player svg{
+  height: 1.8em;
+  width: 1.8em;
   vertical-align: middle;
   margin: 0 12px;
 }
 #player svg.play-circle {
-  height: 1.52em;
-  width: 1.52em;
+  height: 2.6em;
+  width: 2.6em;
 }
 #vertical-align {
   vertical-align: middle;
@@ -280,6 +281,7 @@ ul#info_song li {
 
 /***footer-center-CLOSE***/
 /***footer-right***/
+
 #volume {
   width: 40%;
 }

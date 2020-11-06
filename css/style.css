@@ -88,9 +88,6 @@ aside {
 /***NAV***/
 nav {
   height: calc(100% - 65px);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
 }
 
 /***navbar-top***/
@@ -135,7 +132,7 @@ ul#list_myplaylist {
 ul#list_myplaylist li {
   list-style: none;
   margin-bottom: 17px;
-  flex-shrink: 1;
+
 }
 /***navbar-top-CLOSE***/
 /***navbar_bottom***/
@@ -169,13 +166,12 @@ ul#list_myplaylist li {
   /***playlist-CLOSE***/
   /***NAV-CLOSE***/
   /***A-SIDE-CLOSE***/
-  #section_user_upgrade {
-    height: 60px;
-    position: fixed;
-    right: 0;
-    top:0;
-    width: calc(100% - 230px);
-
+#section_user_upgrade {
+  height: 60px;
+  position: fixed;
+  right: 0;
+  top:0;
+  width: calc(100% - 230px);
   }
 
 main {
@@ -192,7 +188,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 8px 10px 20px 10px;
+  align-content: center;
   height: 90px;
   width: 100%;
   bottom: 0;
@@ -200,40 +196,54 @@ footer {
 }
 
 /***footer-left***/
-#footer_right, #footer_center, #footer_left {
-  height: 70px;
-  line-height: 70px;
+#footer_right, #footer_left {
+  height: 90px;
+  line-height: 90px;
 }
-.play_now {
-  display: inline-block;
+#footer_left {
+  padding-left: 10px;
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
+
 .play_album {
   height: 40px;
+}
+ ul#info_song, .play_album {
   vertical-align: middle;
 }
 ul#info_song {
   display: inline-block;
   line-height: 20px;
-  vertical-align: middle;
 }
 ul#info_song li {
   list-style: none;
 }
- div#option_player {
-  display: inline-block;
- }
 
  #option_player svg {
-   height: 16px;
+   height: 14px;
    width: 16px;
-   display: inline-block;
-   margin: 0 10px;
+   margin: 0 5px;
  }
  /***footer-left-CLOSE***/
 /***footer-center***/
 #footer_center {
   text-align: center;
-  width: calc(100% - 500px);
+  width: 60%;
+  align-self: center;
+}
+/***player***/
+
+#player svg{
+  height: 16px;
+  fill: white;
+  vertical-align: middle;
+  margin: 0 12px;
+}
+#player svg.play-circle {
+  height: 28px;
 }
 #time_line_player {
   width: 70%;
@@ -246,10 +256,8 @@ ul#info_song li {
 /***footer-center-CLOSE***/
 /***footer-right***/
 #footer_right {
-  width: 250px;
+  width: 200px;
   background-color: darkred;
 }
-
-
 
 /***footer-right-CLOSE***/

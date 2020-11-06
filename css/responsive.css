@@ -19,6 +19,14 @@
     width: 60px;
     padding-top: 5px;
   }
+  /***FOOOTER***/
+  img.play_album {
+    height: 30px;
+  }
+  #info_song li {
+    font-size: 12px
+  }
+  /***FOOOTER-CLOSE***/
 
   #section_user_upgrade {
     width:calc(100% - 60px);
@@ -32,4 +40,14 @@
   main {
     margin-left: 0;
   }
+}
+
+@media (max-width: 750px) {
+  #option_player svg {
+    display: block;
+  }
+  #option_player {
+    align-self: center;
+}
+
 }

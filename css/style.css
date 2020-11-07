@@ -65,8 +65,53 @@ svg {
   width: 14px;
   fill: #5a5a5a;;
 }
+ #player svg, #footer_right svg {
+  fill: white;
+}
+#footer_left svg:hover, #download_app a:hover, #list_myplaylist a:hover, #add_playlist a:hover, #navbar_items a:hover, #navbar_items a:hover svg {
+  color: white;
+  fill: white;
+  text-decoration: none;
+}
+#footer_left a:hover {
+  color: white;
+}
+#add_playlist a:hover svg {
+  background-color: white !important
+}
+
+/***TOP HEADER-ORIZZONTALE***/
+#section_user_upgrade {
+  width: calc(100% - 230px);
+  height: 90px;
+  position: fixed;
+  right: 0;
+  top:0;
+  background: rgba(4, 4, 4, 0.6);
+  }
+  #btn_upgrade {
+    position: relative;
+    top:20%;
+    float: right;
+    padding: 10px;
+    margin-right:40px;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+  #btn_upgrade a {
+    text-transform: uppercase;
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  #btn_upgrade:hover {
+      transform: scale(1.2);
+  }
+/***TOP HEADER-ORIZZONTALE-CLOSE***/
 /***MENU-FIXED***/
-#navbar_bottom span, #add_playlist span, #navbar_items span {
+#navbar_bottom span , #add_playlist span , #navbar_items span {
   padding-left: 10px;
   vertical-align: middle;
 }
@@ -125,7 +170,7 @@ nav {
 }
 
 
-#add_playlist > svg {
+#add_playlist  svg {
   height: 2.142em;
   width: 2.142em;
   vertical-align: middle;
@@ -173,20 +218,26 @@ ul#list_myplaylist li {
   /***playlist-CLOSE***/
   /***NAV-CLOSE***/
   /***A-SIDE-CLOSE***/
-#section_user_upgrade {
-  height: 60px;
-  position: fixed;
-  right: 0;
-  top:0;
-  width: calc(100% - 230px);
-  }
 
 main {
   margin-left: 230px;
-  height: 100%;
-  font-size: 50px;
-  overflow-y: scroll;
+  height:calc(100% - 90px);
+  padding-top:100px;
+  overflow-y: auto;
   background-color: #121212;
+}
+
+#racking_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#racking_section li {
+  list-style: none;
+  margin: 0 30px;
+  text-transform: uppercase;
 }
 
 /***footer***/
@@ -219,18 +270,32 @@ footer {
   height: 3.8px;
   background-color: #5a5a5a;
   border-radius: 2px;
-  overflow: hidden;
+
 }
 .progress_bar span {
+  position: relative;
   display: block;
   background-color: #c1c1c1;
   width: 20%;
   height: 100%;
+  border-radius: 2px;
 }
 
-#player svg, #footer_right svg {
+.progress_bar span:hover {
+  background-color: #81b71a;
+}
 
-  fill: white;
+.progress_bar span:hover::after {
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: white;
+  left: 100%;
+  bottom:50%;
+  transform: translateY(50%);
 }
 /***footer-left***/
 
@@ -271,6 +336,10 @@ ul#info_song li {
   height: 2.6em;
   width: 2.6em;
 }
+#player svg.play-circle:hover {
+  transform: scale(1.2);
+}
+
 #vertical-align {
   vertical-align: middle;
 }

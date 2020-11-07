@@ -7,6 +7,15 @@ body {
   font-size: 12px;
   line-height: 20px;
 }
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
 a {
   color: #b3b3b3;
   text-decoration: none;
@@ -15,7 +24,7 @@ a:hover {
   text-decoration: underline;
 }
 
-#wrapper_player, .author_song, #profile, #playlist > span {
+main h3, main h2, #wrapper_player, .author_song, #profile, #playlist > span {
   color: white;
 }
 

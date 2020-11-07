@@ -119,7 +119,7 @@ svg {
 aside {
   height:calc(100% - 90px );
   width: 230px;
-  padding: 15px 10px 5px 10px;
+  padding: 15px 10px 5px 0px;
   top:0;
   left:0;
   background: #040404;
@@ -139,7 +139,9 @@ aside {
 nav {
   height: calc(100% - 65px);
 }
-
+#navbar_items div, #playlist, #list_myplaylist, #navbar_bottom {
+  padding-left: 10px;
+}
 /***navbar-top***/
 #navbar_top {
   height: calc(100% - 90px);
@@ -148,11 +150,14 @@ nav {
   overflow: hidden;
 }
 
+.active {
+  border-left: 2px solid #81b71a;
+}
+
 #add_playlist, #navbar_items > div {
   line-height: 30px;
   height: 30px;
   margin: 8px 0;
-
 }
 
 #navbar_items svg {
@@ -218,7 +223,7 @@ ul#list_myplaylist li {
   /***playlist-CLOSE***/
   /***NAV-CLOSE***/
   /***A-SIDE-CLOSE***/
-
+/***MAIN***/
 main {
   margin-left: 230px;
   height:calc(100% - 90px);
@@ -226,7 +231,7 @@ main {
   overflow-y: auto;
   background-color: #121212;
 }
-
+/*list main top racking_section*/
 #racking_section {
   display: flex;
   flex-direction: row;
@@ -239,6 +244,43 @@ main {
   margin: 0 30px;
   text-transform: uppercase;
 }
+/*list main top racking_section-CLOSE*/
+/*ALBUM*/
+.row {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+main figure {
+  text-align: center;
+  width: calc(100% / 6);
+}
+
+main figure img{
+  width: 100%;
+  padding: 20px;
+}
+main p, main h2 {
+  padding: 20px;
+}
+main p {
+  padding-top: 0;
+}
+
+.compilation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.compilation img {
+  width: calc(100% / 2);
+  padding: 0;
+}
+/*ALBUM-CLOSE*/
+/***MAIN-CLOSE***/
 
 /***footer***/
 footer {

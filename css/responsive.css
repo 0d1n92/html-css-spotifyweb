@@ -1,5 +1,14 @@
+@media (max-width: 970px) {
+  /***MAIN***/
+  main figure {
+    width: calc(100% / 4);
+  }
+  /***MAIN-CLOSE***/
+}
+
 @media (max-width: 750px) {
-  /***footer***/
+
+  /***FOOTER***/
   #option_player svg {
     display: block;
   }
@@ -21,7 +30,7 @@
   #footer_left {
     padding-right: 0;
   }
-  /***footer-CLOSE***/
+  /***FOOTER-CLOSE***/
 }
 
 /* smarphone */

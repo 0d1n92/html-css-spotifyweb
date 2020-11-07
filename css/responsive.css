@@ -7,7 +7,9 @@
 }
 
 @media (max-width: 750px) {
-
+  main figure {
+    width: calc(100% / 2);
+  }
   /***FOOTER***/
   #option_player svg {
     display: block;
@@ -66,7 +68,7 @@
   }
 /***aside navbar-CLOSE***/
   main {
-    margin-left: 0;
+    margin-left: 60px;
   }
 
   /***FOOOTER***/
@@ -91,9 +93,10 @@
   #footer_center {
     padding: 0;
     padding-top: 10px;
+    width: 50%;
   }
   #time_line_player {
-      width: 60%;
+      width: 50%;
     }
   #player svg.play-circle {
     height: 2em;

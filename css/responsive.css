@@ -37,14 +37,22 @@
 
 /* smarphone */
 @media (max-width: 480px) {
+  body {
+    font-size: 10px !important;
+  }
 
   #logo_md, aside span, #playlist, ul#list_myplaylist {
     display: none;
   }
 
   #section_user_upgrade {
-    width:calc(100% - 60px);
+    width:calc(100% - 50px);
   }
+  /***MAIN***/
+  #racking_section li {
+    padding: 10px 10px;
+  }
+  /***MAIN-CLOSE***/
 
 /***aside navbar***/
   #header_logo img#logo_xs {
@@ -55,20 +63,30 @@
 
   #header_logo {
     height: 40px;
+    padding: 0;
+  }
+
+  #navbar_items div, #playlist, #list_myplaylist, #navbar_bottom {
+    padding-left: 0px;
   }
 
   aside {
-    width: 60px;
+    width: 50px;
     padding-top: 5px;
     text-align: center;
   }
+
+  #navbar_bottom {
+    width: 100%;
+  }
+
   #download_app {
     border: none;
     text-align: center;
   }
 /***aside navbar-CLOSE***/
   main {
-    margin-left: 60px;
+    margin-left: 50px;
   }
 
   /***FOOOTER***/
@@ -113,9 +131,5 @@
   #volume {
     width: 30%;
   }
-
-
   /***FOOOTER-CLOSE***/
-
-
 }

@@ -338,6 +338,10 @@ footer {
   bottom: 0;
   right: 0;
 }
+footer svg {
+  cursor: pointer;
+}
+
 #footer_right, #footer_left {
   height: 90px;
   width: 230px;
@@ -356,6 +360,7 @@ footer {
   height: 3.8px;
   background-color: #5a5a5a;
   border-radius: 2px;
+  cursor: pointer;
 }
 .progress_bar span {
   position: relative;

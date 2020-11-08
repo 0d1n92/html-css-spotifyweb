@@ -24,6 +24,10 @@
   #option_player {
     align-self: center;
   }
+  ul#info_song li {
+    font-size: 10px;
+    word-break: break-all;
+  }
   /***player***/
    #footer_center {
     flex-shrink: 0;
@@ -31,6 +35,7 @@
   }
   #footer_left,#footer_right {
     flex-shrink: 1;
+    width: 22.55%;
   }
   #footer_right svg {
     flex-shrink: 0;
@@ -104,8 +109,9 @@
   img.play_album {
     height: 30px;
   }
-  #info_song li {
-    font-size: 10px
+  ul#info_song li {
+    font-size: 10px;
+    word-break: break-all;
   }
 
   #footer_left svg, #footer_right svg {
@@ -114,9 +120,12 @@
     margin-right: 2px;
   }
 
+  #footer_left,#footer_right {
+    width: 25%;
+  }
+
   #footer_left {
     padding-right: 0;
-    width:37%;
   }
 
   #footer_center {

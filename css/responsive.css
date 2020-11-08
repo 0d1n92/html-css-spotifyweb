@@ -24,6 +24,7 @@
   }
   #footer_left,#footer_right {
     flex-shrink: 1;
+    width: 22.5%;
   }
   #footer_right svg {
     flex-shrink: 0;
@@ -106,10 +107,12 @@
     width: 1.2em;
     margin-right: 2px;
   }
-
+  #footer_left,#footer_right {
+    flex-shrink: 1;
+    width: 25%;
+  }
   #footer_left {
     padding-right: 0;
-    width:37%;
   }
 
   #footer_center {

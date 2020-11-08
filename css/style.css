@@ -29,10 +29,15 @@ svg {
   width: 14px;
   fill: #5a5a5a;;
 }
+.active a,.active svg {
+  color: white;
+  fill: white !important;
+}
+
  #player svg, #footer_right svg {
   fill: white;
 }
-#footer_left svg:hover, #download_app a:hover, #list_myplaylist a:hover, #add_playlist a:hover, #navbar_items a:hover, #navbar_items a:hover svg {
+ #footer_left svg:hover, #download_app a:hover, #list_myplaylist a:hover, #add_playlist a:hover, #navbar_items a:hover, #navbar_items a:hover svg {
   color: white;
   fill: white;
   text-decoration: none;
@@ -52,6 +57,7 @@ svg {
   right: 0;
   top:0;
   background: rgba(4, 4, 4, 0.6);
+  z-index: 3;
   }
   #btn_upgrade {
     position: relative;
@@ -115,7 +121,7 @@ nav {
 }
 
 .active {
-  border-left: 2px solid #81b71a;
+  border-left: 3px solid #adff2f;
 }
 
 #add_playlist, #navbar_items > div {
@@ -205,7 +211,7 @@ main {
 
 #racking_section li {
   list-style: none;
-  padding: 10px 30px;
+  padding: 10px 23px;
   text-transform: uppercase;
 }
 #racking_section li a:hover {
@@ -218,7 +224,7 @@ main {
   margin: 0 auto;
   height: 2px;
   width: 40%;
-  background-color: #81b71a;
+  background-color: #adff2f;
 }
 /*list main top racking_section-CLOSE*/
 /*ALBUM*/
@@ -228,7 +234,10 @@ main {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-
+main {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 main figure {
   text-align: center;
   width: calc(100% / 6);
@@ -269,7 +278,7 @@ figcaption {
   width: 100%;
   opacity: 1;
   position: relative;
-  padding: 20px;
+  padding: 10px;
   cursor: pointer;
 }
 

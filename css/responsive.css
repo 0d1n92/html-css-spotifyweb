@@ -48,6 +48,10 @@
   #section_user_upgrade {
     width:calc(100% - 50px);
   }
+
+  .active {
+    border: none;
+  }
   /***MAIN***/
   #racking_section li {
     padding: 10px 10px;

@@ -89,7 +89,6 @@ aside {
   left:0;
   background: #040404;
   min-height: 450px;
-
 }
 #header_logo {
   height: 65px;
@@ -126,8 +125,8 @@ nav {
 }
 
 #navbar_items svg {
-  height: 1.857em;
-  width: 1.857em;
+  height: 2em;
+  width: 2em;
   vertical-align: middle;
   fill: #a3a3a3
 }
@@ -141,8 +140,8 @@ nav {
 
 
 #add_playlist  svg {
-  height: 2.142em;
-  width: 2.142em;
+  height: 2.4em;
+  width: 2.4em;
   vertical-align: middle;
 }
 
@@ -227,6 +226,7 @@ main {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 main figure {
@@ -240,11 +240,14 @@ main figure img{
   vertical-align: middle;
 
 }
-main p, main h2 {
-  padding: 20px;
+ main h2 {
+  padding: 10px 20px;
 }
 main p {
-  padding-top: 0;
+  padding: 0 20px;
+}
+figcaption {
+  margin-top: 5px;
 }
 
 .compilation {

@@ -1,0 +1,151 @@
+@media (max-width: 970px) {
+  /***MAIN***/
+  main figure {
+    width: calc(100% / 4);
+  }
+
+  figure:nth-child(1n+5) {
+    display: none;
+  }
+  /***MAIN-CLOSE***/
+}
+
+@media (max-width: 750px) {
+  main figure {
+    width: calc(100% / 2);
+  }
+  figure:nth-child(1n+3) {
+    display: none;
+  }
+  /***FOOTER***/
+  #option_player svg {
+    display: block;
+  }
+  #option_player {
+    align-self: center;
+  }
+  /***player***/
+   #footer_center {
+    flex-shrink: 0;
+    width: 55%;
+  }
+  #footer_left,#footer_right {
+    flex-shrink: 1;
+  }
+  #footer_right svg {
+    flex-shrink: 0;
+  }
+
+  #footer_left {
+    padding-right: 0;
+  }
+  /***FOOTER-CLOSE***/
+}
+
+/* smarphone */
+@media (max-width: 480px) {
+  body {
+    font-size: 10px !important;
+  }
+
+  #logo_md, aside span, #playlist, ul#list_myplaylist {
+    display: none;
+  }
+
+  #section_user_upgrade {
+    width:calc(100% - 50px);
+  }
+
+  .active {
+    border: none;
+  }
+  /***MAIN***/
+  #racking_section li {
+    padding: 10px 10px;
+  }
+  /***MAIN-CLOSE***/
+
+/***aside navbar***/
+  #header_logo img#logo_xs {
+    display: block;
+    height: 30px;
+    margin: auto;
+  }
+
+  #header_logo {
+    height: 40px;
+    padding: 0;
+  }
+
+  #navbar_items div, #playlist, #list_myplaylist, #navbar_bottom {
+    padding-left: 0px;
+  }
+
+  aside {
+    width: 50px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  #navbar_bottom {
+    width: 100%;
+  }
+
+  #download_app {
+    border: none;
+    text-align: center;
+  }
+/***aside navbar-CLOSE***/
+  main {
+    margin-left: 50px;
+  }
+
+  /***FOOOTER***/
+  img.play_album {
+    height: 30px;
+  }
+  #info_song li {
+    font-size: 10px
+  }
+
+  #footer_left svg, #footer_right svg {
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: 2px;
+  }
+
+  #footer_left {
+    padding-right: 0;
+    width:37%;
+  }
+
+  #footer_center {
+    padding: 0;
+    padding-top: 10px;
+    width: 50%;
+  }
+  #time_line_player {
+      width: 50%;
+    }
+  #player svg.play-circle {
+    height: 2em;
+    width: 2em;
+  }
+  #player svg {
+      height: 1.4em;
+      margin: 0 3px;
+    }
+
+  #footer_right {
+    padding-left: 0;
+  }
+  #volume {
+    width: 30%;
+  }
+  /***FOOOTER-CLOSE***/
+}
+@media (max-height: 350px) {
+  div#section_user_upgrade {
+    display: none;
+  }
+}

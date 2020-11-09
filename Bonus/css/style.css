@@ -392,12 +392,13 @@ footer svg {
 
 .play_album {
   height: 40px;
+  vertical-align: middle;
 }
 
 ul#info_song {
   display: inline-block;
   line-height: 13px;
-  vertical-align: super;
+  vertical-align: middle;
 }
 ul#info_song li {
   list-style: none;

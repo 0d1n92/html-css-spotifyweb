@@ -1,4 +1,4 @@
-<h1>Replication webApp whatsApp<h1>
+<h1>Replication webApp of Spotify<h1>
   <p>exercise of css/html, a replication of style of webApp spotify. Full responsive</p>
   <h4>Tecnology Used</h4>
   <ul>
